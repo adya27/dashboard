@@ -86,3 +86,15 @@ export type InvoiceForm = {
   amount: number;
   status: "pending" | "paid";
 };
+
+export type ExchangeData = {
+  code: string;
+  stockExchange: string;
+  topStocks: TopStockData[];
+};
+
+export type TopStockData = {
+  code: string;
+  stockName: string;
+  price: number;
+};
